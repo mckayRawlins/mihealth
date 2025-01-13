@@ -20,11 +20,18 @@ li {
     float: right;
 }
 
+.main {
+    height: auto;
+    width: auto;
+    display: flex;
+    
+}
+
 .recipeContainer {
     height: auto;
-    width: fit-content;
+    width: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
