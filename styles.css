@@ -7,6 +7,12 @@
 
 .navLogo {
     position: absolute;
+    top: 1.7%;
+    left: 5%;
+}
+
+.navbar {
+    height: auto;
 }
 
 ul {
@@ -18,13 +24,30 @@ ul {
 
 li {
     float: right;
+    padding: .8rem;
+    margin: 0 .8rem 0;
+}
+
+li:nth-of-type(1) {
+    margin-right: 10%;
 }
 
 .main {
-    height: auto;
+    height: 100vh;
     width: auto;
     display: flex;
-    
+    justify-content: space-evenly;
+}
+
+.space {
+    margin: 2rem;
+}
+
+.infoContainer {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .recipeContainer {
@@ -38,6 +61,7 @@ li {
 .recipe {
     height: 350px;
     width: 250px;
+    margin: 1.5rem;
 }
 
 #breakfast {
