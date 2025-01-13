@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.navLogo {
+    position: absolute;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -13,4 +17,9 @@ ul {
 
 li {
     float: right;
+}
+
+.recipe {
+    height: 250px;
+    
 }
