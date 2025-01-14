@@ -7,24 +7,22 @@
 
 /*Nab Bar code*/
 
-.navLogo {
-    position: absolute;
-    top: 1.7%;
-    left: 5%;
-}
-
-.navbar {
-    height: auto;
+header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    display: flex;
 }
 
-li {
+
+
+/*li {
     float: right;
     padding: .8rem;
     margin: 0 .8rem 0;
@@ -32,9 +30,9 @@ li {
 
 li:nth-of-type(1) {
     margin-right: 10%;
-}
+}*/
 
-.main {
+main {
     height: 100%;
     width: auto;
     display: flex;
@@ -86,8 +84,17 @@ li:nth-of-type(1) {
     background-size: cover;
 }
 
-/*@media only screen and (max-width: 500px) {
-    li {
+@media only screen and (max-width: 1000px) {
+    
+    main {
+        flex-direction: column;
+    }
+
+    .infoContainer {
+        width: 100%;
+    }
+
+    /*li {
         float: right;
         padding: .5rem;
         margin: 0 .3rem 0;
@@ -95,5 +102,12 @@ li:nth-of-type(1) {
 
     li:nth-of-type(1) {
         margin-right: 5px;
+    }*/
+}
+
+@media only screen and (max-width: 650px) {
+    .navLogo {
+        position: relative;
+        text-align: center;
     }
-}*/
+}
