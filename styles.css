@@ -7,13 +7,14 @@
 
 html {
     font-family: sans-serif;
+    font-weight: bold;
 }
 
 /*Nab Bar code*/
 
 header {
     width: 100%;
-    padding: 10px 3rem;
+    padding: 10px 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,16 +34,30 @@ span#red {
 }
 
 .navLink {
+    color: black;
+    text-decoration: none;
+    margin-left: 3rem;
     padding: 5px;
 }
+.navLink:hover {
+    
+    color: #ffffff;
+    background-color: #8DC728;
+}
+
+/*Main section*/
 
 main {
     height: 100%;
     width: auto;
-    padding: 4rem 3rem;
+    padding: 4rem 5rem;
     display: flex;
     justify-content: space-between;
     background-color: #E0E0E0;
+}
+
+span.wrap {
+    display: block;
 }
 
 .infoContainer {
@@ -54,6 +69,7 @@ main {
     
 }
 
+/*Recipe section*/
 
 .recipeContainer {
     height: auto;
