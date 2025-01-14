@@ -5,6 +5,10 @@
     border: 1px solid black;
 }
 
+html {
+    font-family: sans-serif;
+}
+
 /*Nab Bar code*/
 
 header {
@@ -31,6 +35,7 @@ main {
     padding: 0 3rem;
     display: flex;
     justify-content: space-between;
+    background-color: #E0E0E0;
 }
 
 .infoContainer {
@@ -56,6 +61,22 @@ main {
     height: 350px;
     width: 250px;
     margin-left: 5px;
+}
+
+.topText, .bottomText {
+    padding: 10px;
+    text-align: right;
+}
+
+.topText {
+    width: fit-content;
+    background-color: #ffffff;
+}
+
+.bottomText {
+    width: 50%;
+    background-color: #8DC728;
+    
 }
 
 #breakfast {
