@@ -7,7 +7,6 @@
 
 html {
     font-family: sans-serif;
-    font-weight: bold;
 }
 
 /*Nab Bar code*/
@@ -28,6 +27,7 @@ nav {
 
 .navLogo {
     color: #8DC728;
+    font-weight: 900;
 }
 span#red {
     color: #CE2020;
@@ -56,6 +56,11 @@ main {
     background-color: #E0E0E0;
 }
 
+.bolder {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+}
 span.wrap {
     display: block;
 }
@@ -93,6 +98,7 @@ span.wrap {
 .topText, .bottomText {
     padding: 10px;
     text-align: right;
+    z-index: 10;
 }
 
 .topText {
@@ -104,6 +110,13 @@ span.wrap {
     width: 50%;
     background-color: #8DC728;
     
+}
+
+.foodImage {
+    height: 350px;
+    width: 250px;
+    position: absolute;
+    object-fit: cover;
 }
 
 #breakfast {
@@ -124,7 +137,7 @@ span.wrap {
     background-size: cover;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1500px) {
     
     main {
         flex-direction: column;
@@ -132,6 +145,7 @@ span.wrap {
 
     .infoContainer {
         width: 100%;
+        margin-bottom: 5rem;
     }
 
 }
