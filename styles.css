@@ -7,6 +7,12 @@
 
 html {
     font-family: sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-image: url(images/double-bubble-outline.webp);
+    background-repeat: repeat;
 }
 
 /*Nab Bar code*/
@@ -40,7 +46,6 @@ span#red {
     padding: 5px;
 }
 .navLink:hover {
-    
     color: #ffffff;
     background-color: #8DC728;
 }
@@ -53,13 +58,12 @@ main {
     padding: 4rem 5rem;
     display: flex;
     justify-content: space-between;
-    background-color: #E0E0E0;
+    background-color: #E0E0E080;
 }
 
 .bolder {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 4rem;
-    font-weight: bolder;
 }
 span.wrap {
     display: block;
@@ -96,6 +100,7 @@ span.wrap {
 }
 
 .topText, .bottomText {
+    font-size: .8rem;
     padding: 10px;
     text-align: right;
     z-index: 10;
@@ -137,7 +142,7 @@ span.wrap {
     background-size: cover;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1300px) {
     
     main {
         flex-direction: column;
