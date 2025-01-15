@@ -7,7 +7,6 @@
 
 html {
     font-family: sans-serif;
-    font-weight: bold;
 }
 
 body {
@@ -50,13 +49,16 @@ span#red {
     background-color: #8DC728;
 }
 
+.flexBox {
+    display: flex;
+}
+
 /*Main section*/
 
 main {
     height: 100%;
     width: auto;
     padding: 4rem 5rem;
-    display: flex;
     justify-content: space-between;
     background-color: #E0E0E080;
 }
@@ -72,10 +74,8 @@ span.wrap {
 .infoContainer {
     width: 25%;
     min-width: 350px;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 /*Recipe section*/
@@ -83,7 +83,6 @@ span.wrap {
 .recipeContainer {
     height: auto;
     width: auto;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -93,10 +92,13 @@ span.wrap {
     height: 350px;
     width: 250px;
     margin-left: 1.5rem;
-    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+.recipe:hover {
+    border: 2px solid white;
 }
 
 .topText, .bottomText {
@@ -142,7 +144,7 @@ span.wrap {
     background-size: cover;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
     
     main {
         flex-direction: column;
@@ -151,6 +153,10 @@ span.wrap {
     .infoContainer {
         width: 100%;
         margin-bottom: 5rem;
+    }
+
+    .recipe {
+        margin-bottom: 1.5rem;
     }
 
 }
